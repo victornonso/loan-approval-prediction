@@ -1,0 +1,36 @@
+{
+  "applications": 4269,
+  "originalColumns": 13,
+  "predictors": 11,
+  "approved": 2656,
+  "rejected": 1613,
+  "missingness": {
+    "education": {
+      "count": 213,
+      "percent": 4.989458889669711
+    },
+    "self_employed": {
+      "count": 213,
+      "percent": 4.989458889669711
+    },
+    "income_annum": {
+      "count": 298,
+      "percent": 6.980557507613024
+    },
+    "loan_amount": {
+      "count": 298,
+      "percent": 6.980557507613024
+    },
+    "cibil_score": {
+      "count": 298,
+      "percent": 6.980557507613024
+    }
+  },
+  "duplicates": 0,
+  "uniqueIds": 4269,
+  "sha256": "0c0f1a6ec99db09b548aba665ac3e59e92e1e4afefbb4b3f16897b4778fdef09",
+  "trainRows": 3415,
+  "testRows": 854,
+  "positiveClass": "Approved",
+  "seed": 42
+}

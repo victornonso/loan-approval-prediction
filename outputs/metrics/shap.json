@@ -1,0 +1,62 @@
+{
+  "method": "Tree-path-dependent Tree SHAP",
+  "output": "Approved-class probability",
+  "backgroundRows": 0,
+  "background": "Fitted tree leaf frequencies, including SMOTE training observations",
+  "explainedRows": 854,
+  "maxAdditivityError": 4.551914400963142e-15,
+  "features": [
+    {
+      "feature": "cibil_score",
+      "meanAbsoluteShap": 0.3966948294610057
+    },
+    {
+      "feature": "loan_term",
+      "meanAbsoluteShap": 0.05930498995257605
+    },
+    {
+      "feature": "loan_amount",
+      "meanAbsoluteShap": 0.014259792495365456
+    },
+    {
+      "feature": "no_of_dependents",
+      "meanAbsoluteShap": 0.007908895452487888
+    },
+    {
+      "feature": "commercial_assets_value",
+      "meanAbsoluteShap": 0.007383801436489378
+    },
+    {
+      "feature": "income_annum",
+      "meanAbsoluteShap": 0.00697419332290167
+    },
+    {
+      "feature": "residential_assets_value",
+      "meanAbsoluteShap": 0.00680599781143185
+    },
+    {
+      "feature": "bank_asset_value",
+      "meanAbsoluteShap": 0.005351606540759815
+    },
+    {
+      "feature": "luxury_assets_value",
+      "meanAbsoluteShap": 0.005021268820842602
+    },
+    {
+      "feature": "education_Not Graduate",
+      "meanAbsoluteShap": 0.002527406200026837
+    },
+    {
+      "feature": "education_Graduate",
+      "meanAbsoluteShap": 0.0023586088641182924
+    },
+    {
+      "feature": "self_employed_Yes",
+      "meanAbsoluteShap": 0.001579147938703569
+    },
+    {
+      "feature": "self_employed_No",
+      "meanAbsoluteShap": 0.0015531604110751941
+    }
+  ]
+}

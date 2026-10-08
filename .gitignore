@@ -1,0 +1,7 @@
+.venv/
+myenv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+models/*.joblib
+outputs/metrics/split.json

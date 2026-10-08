@@ -1,0 +1,88 @@
+{
+  "selectedModel": "Random Forest",
+  "criterion": "Highest mean F1 across five outer folds on the 80% training partition; lower SD breaks exact ties",
+  "summary": [
+    {
+      "model": "Logistic Regression",
+      "cvMeanF1": 0.9076502893804077,
+      "cvStdF1": 0.0158837906994318,
+      "defaultCvMeanF1": 0.9090341670830215,
+      "cvMeanAccuracy": 0.8878477306002928,
+      "foldF1": [
+        0.9040097205346294,
+        0.9101796407185628,
+        0.9177592371871275,
+        0.9265944645006017,
+        0.8797083839611178
+      ]
+    },
+    {
+      "model": "Random Forest",
+      "cvMeanF1": 0.954047578465036,
+      "cvStdF1": 0.003815331430274023,
+      "defaultCvMeanF1": 0.953777100389446,
+      "cvMeanAccuracy": 0.9417276720351391,
+      "foldF1": [
+        0.953810623556582,
+        0.953810623556582,
+        0.9485714285714286,
+        0.9605568445475638,
+        0.9534883720930233
+      ]
+    },
+    {
+      "model": "XGBoost",
+      "cvMeanF1": 0.9495211874335663,
+      "cvStdF1": 0.002738860841103224,
+      "defaultCvMeanF1": 0.9485931146234483,
+      "cvMeanAccuracy": 0.9367496339677892,
+      "foldF1": [
+        0.9472450175849941,
+        0.9523809523809523,
+        0.9457900807381776,
+        0.9494712103407755,
+        0.9527186761229315
+      ]
+    },
+    {
+      "model": "Gradient Boosting",
+      "cvMeanF1": 0.9523011262182237,
+      "cvStdF1": 0.005766041580252916,
+      "defaultCvMeanF1": 0.9491468823362468,
+      "cvMeanAccuracy": 0.9402635431918009,
+      "foldF1": [
+        0.9415887850467289,
+        0.9544924154025671,
+        0.9523809523809523,
+        0.954171562867215,
+        0.9588719153936546
+      ]
+    },
+    {
+      "model": "SVC",
+      "cvMeanF1": 0.9249366912107199,
+      "cvStdF1": 0.007836279338898935,
+      "defaultCvMeanF1": 0.9219377266360809,
+      "cvMeanAccuracy": 0.9065885797950219,
+      "foldF1": [
+        0.9252336448598131,
+        0.9230769230769231,
+        0.931924882629108,
+        0.9331770222743259,
+        0.9112709832134293
+      ]
+    }
+  ],
+  "holdoutUsedForSelection": false,
+  "preprocessingInsideInnerFolds": true,
+  "samplingInsideInnerFolds": true,
+  "outerSplits": 5,
+  "innerSplits": 5,
+  "candidates": {
+    "Logistic Regression": 8,
+    "Random Forest": 12,
+    "XGBoost": 16,
+    "Gradient Boosting": 24,
+    "SVC": 6
+  }
+}
