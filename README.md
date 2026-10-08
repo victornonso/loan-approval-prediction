@@ -3,6 +3,8 @@
 Five classifiers compared under fold-contained preprocessing, nested validation
 and SHAP interpretation. Author: Victor Okeke.
 
+[Explore the case study](https://victorokeke.co.uk/projects/loan-approval-prediction/)
+
 ## Problem and dataset
 
 Predict the recorded Approved / Rejected decision from 11 application attributes.
