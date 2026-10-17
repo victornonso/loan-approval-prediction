@@ -18,6 +18,17 @@ Place the supplied `loan_approval.csv` in `data/`; its expected SHA-256 is recor
 in `outputs/metrics/dataset.json`. Do not infer collection provenance or a
 redistribution licence from the dataset's familiar title.
 
+## Engineering decisions
+
+| Decision | Reason |
+|---|---|
+| Keep preprocessing inside the fitted pipeline | Fit imputation and scaling on training data and reproduce the same transformations at inference |
+| Apply SMOTE only within fitting folds | Keep validation and holdout distributions independent of resampling |
+| Use nested training-only validation | Separate hyperparameter tuning from model-family comparison |
+| Freeze model selection before holdout evaluation | Reserve the holdout for evaluation rather than iterative selection |
+| Persist metrics, selection and SHAP evidence | Make the selected model and its interpretation inspectable |
+| Treat approval as the recorded target | Avoid presenting historical policy prediction as repayment-risk modelling |
+
 ## Preprocessing and class imbalance
 
 Numeric mean imputation and standardisation; categorical mode imputation and
@@ -77,5 +88,5 @@ external/temporal testing and a documented fairness assessment with human oversi
 `src/`: training, preprocessing, evaluation, figures, explanation and verification.
 `notebooks/`: reproducible analysis entry point. `docs/`: method and model card.
 `outputs/`: aggregate evidence. `models/`: locally generated complete pipeline.
-Virtual environments, academic administration and redundant saved models are
-excluded from the source archive.
+The fitted pipeline is generated locally; aggregate evidence and the documented
+environment support reproducibility without redistributing the source dataset.
